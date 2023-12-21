@@ -1,0 +1,137 @@
+#################################
+#								#
+#		Stalinism Events		#
+#								#
+#################################
+
+add_namespace = acsw_stalinism 
+
+# Ascension of Radical Communism
+country_event = {
+    id = acsw_stalinism.1
+    title = acsw_stalinism.1.title
+    desc = acsw_stalinism.1.desc
+    picture = GFX_report_event_stalinism_ascends
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		# Must be a country
+        tag = ROOT
+		
+        # Country must have a minister with this sub-ideology
+         AND = {
+            has_character_with_stalinism = yes
+        }
+	}
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Allow him to a seat
+        name = acsw_stalinism.1.a
+        ai_chance = { factor = 50 }
+		hidden_effects = {
+			
+		}
+    }
+	
+	option = { # Deny him a seat
+        name = acsw_stalinism.1.b
+        ai_chance = { factor = 50 }
+		hidden_effects = {
+			set_stability = 0.35 # 35%
+			if = {
+				NOT = {
+					ROOT = {
+						has_government = communism
+					}
+				}
+				add_stability = 0.05 # -5%, go below 30% and civil war may start
+			}
+		}
+    }
+}
+
+# Stalinist Coup
+country_event = {
+    id = acsw_stalinism.2
+    title = acsw_stalinism.2.title
+    desc = acsw_stalinism.2.desc
+    picture = GFX_report_event_stalinist_coup
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		# Must be a country
+        tag = ROOT
+		
+        # Country must have a minister with this sub-ideology
+		has_character_with_stalinism = yes
+		
+		AND = {
+			communism > 0.25 # Greater than 25% popularity
+		}
+	}
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # We will stand
+        name = acsw_stalinism.2.a
+        ai_chance = { factor = 50 }
+		hidden_effects = {
+			stalinist_civil_war = yes
+		}
+    }
+	
+	option = { # We will abdicate
+        name = acsw_stalinism.2.b
+        ai_chance = { factor = 50 }
+		hidden_effects = {
+			stalinism_takes_over = yes
+		}
+    }
+}
+
+# Red Purge
+country_event = {
+    id = acsw_stalinism.3
+    title = acsw_stalinism.3.title
+    desc = acsw_stalinism.3.desc
+    picture = GFX_report_event_red_purge
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		# Must be a country
+        tag = ROOT
+		
+		# Country must have a minister with this sub-ideology
+		has_character_with_stalinism = yes
+		
+		# Country must have 25% or Greater in popularity
+		AND = {
+			communism > 0.25
+		}
+		
+		# Country's stability must be below 30%
+		AND = {
+			has_stability < 0.30
+		}
+	}
+
+    mean_time_to_happen = { months = 6 } # once-twice a year only
+
+    option = { # Denounce the Cowards
+        name = acsw_stalinism.2.a
+        ai_chance = { factor = 50 }
+		hidden_effects = {
+			kill_disloyal_ministers = yes
+		}
+    }
+}

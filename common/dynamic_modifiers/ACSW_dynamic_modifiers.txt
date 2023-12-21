@@ -1,0 +1,25 @@
+### New State Modiiers ###
+
+# Ukrainian Agitation
+ukrainian_agitation = {
+	enable = { always = yes }
+	
+	icon = GFX_modifiers_ukrainian_agitation
+	
+	resistance_growth = 0.01
+	resistance_target = 0.1
+	resistance_decay = 0.1
+	state_resources_factor = -0.15
+}
+
+# Slovakian Autonomy
+slovakian_autonomy = {
+	enable = { always = yes }
+	
+	icon = GFX_modifiers_slovakian_autonomy
+	
+	resistance_growth = -0.01
+	resistance_target = -0.1
+	resistance_decay = -0.1
+	state_resources_factor = -0.15
+}

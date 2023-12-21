@@ -1,0 +1,23 @@
+state={
+	id=976
+	name="STATE_976"
+	
+	history={
+		owner = AUS
+		victory_points = {
+			3718 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = AUS
+	}
+	
+	provinces={
+		3718 6552 6739 9527 
+	}
+	manpower=72726
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=pastoral
+}

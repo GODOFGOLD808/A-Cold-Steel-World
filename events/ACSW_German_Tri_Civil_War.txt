@@ -1,0 +1,162 @@
+# We are Attacked! #
+country_event = {
+	id = acsw_german_tri_civil_war.1
+	title = acsw_german_tri_civil_war.1.title
+	desc = acsw_german_tri_civil_war.1.desc
+	picture = GFX_report_event_german_civil_war
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		tag = GER
+		
+		# Timeframe
+		AND = {
+			date > 1931.2.1
+			date < 1931.5.1
+		}
+		
+		# Germany must have this Idea/National Spirit
+		AND = {
+			has_idea = GER_tri_revolution
+		}
+		
+		# Germany must have these Country Flags
+		AND = {
+			has_country_flag = GER_tri_civil_war_begins
+		}
+		AND = {
+			has_country_flag = GER_flee_berlin
+		}
+		
+		# Germany must not have this Country Flag
+		NOT = {
+			has_country_flag = GER_defend_berlin
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { # 
+			clr_country_flag = GER_tri_civil_war_begins
+			set_country_flag = GER_tri_civil_war
+		}
+	}
+	
+	option = { # Flee to the Rhine!
+		name = acsw_german_tri_civil_war.1.a
+		ai_chance = { factor = 100 }
+		GER_tri_civil_war_starts_flee = yes
+	}
+}
+
+# We are Attacked! #
+country_event = {
+	id = acsw_german_tri_civil_war.2
+	title = acsw_german_tri_civil_war.2.title
+	desc = acsw_german_tri_civil_war.2.desc
+	picture = GFX_report_event_german_civil_war
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		tag = GER
+		
+		# Timeframe
+		AND = {
+			date > 1931.2.1
+			date < 1931.5.1
+		}
+		
+		# Germany must have this Idea/National Spirit
+		AND = {
+			has_idea = GER_tri_revolution
+		}
+		
+		# Germany must have these Country Flags
+		AND = {
+			has_country_flag = GER_tri_civil_war_begins
+		}
+		AND = {
+			has_country_flag = GER_defend_berlin
+		}
+		
+		# Germany must not have this Country Flag
+		NOT = {
+			has_country_flag = GER_flee_berlin
+		}
+	}
+	
+	immediate = {
+		hidden_effect = { # 
+			clr_country_flag = GER_tri_civil_war_begins
+			set_country_flag = GER_tri_civil_war
+		}
+	}
+	
+	option = { # Holdfast Berlin!
+		name = acsw_german_tri_civil_war.2.a
+		ai_chance = { factor = 100 }
+		GER_tri_civil_war_starts_defend = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ruins and Mayhem #
+country_event = {
+	id = acsw_german_tri_civil_war.3
+	title = acsw_german_tri_civil_war.3.title
+	desc = acsw_german_tri_civil_war.3.desc
+	picture = GFX_report_event_german_civil_war
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		tag = GER
+		
+		# Germany must be in a Civil War
+		AND = {
+			has_civil_war = no
+		}
+		
+		# Germany must have this Country Flag
+		AND = {
+			has_country_flag = GER_tri_civil_war_concludes
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	
+	option = { # A Small Price
+		name = acsw_german_tri_civil_war.3.a
+		ai_chance = { factor = 100 }
+		# No Effect
+	}
+}

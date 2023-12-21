@@ -1,0 +1,64 @@
+characters = {
+	
+	# Country Leaders
+	POL_gabriel_narutowicz = {
+		name=POL_gabriel_narutowicz
+		portraits = {
+			civilian = {
+				large="GFX_portrait_polish_gabriel_narutowicz"
+			}
+		}
+		country_leader = {
+			ideology=moderatism
+			traits = { staple }
+			expire="1930.6.1.1"
+			id=-1
+		}
+	}
+	
+	POL_warsaw_parliament = {
+		name=POL_warsaw_parliament
+		portraits = {
+			civilian = {
+				large="GFX_portrait_polish_warsaw_parliament"
+			}
+		}
+		country_leader = {
+			ideology=legislative_assembly
+			traits = {  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	POL_ignacy_moscicki = {
+		name=POL_ignacy_moscicki
+		portraits = {
+			civilian = {
+				large="GFX_portrait_polish_ignacy_moscicki"
+			}
+		}
+		country_leader = {
+			ideology=oligarchism
+			traits = {  }
+			expire="1946.10.2.1"
+			id=-1
+		}
+	}
+	
+	# Miscellaneous Leaders
+	POL_anna_andersson = {
+		name="Anastasia Romanov"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_anna_anderson"
+			}
+		}
+		country_leader = {
+			ideology=despotism
+			traits = { the_last_romanov_maybe }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

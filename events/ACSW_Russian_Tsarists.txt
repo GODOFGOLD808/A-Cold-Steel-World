@@ -1,0 +1,258 @@
+#########################################
+#										#
+#		Russian Monarchist Events		#
+#										#
+#########################################
+
+add_namespace = acsw_russian_tsarists 
+
+# The Restorationists Call
+country_event = {
+    id = acsw_russian_tsarists.1
+    title = acsw_russian_tsarists.1.title
+    desc = acsw_russian_tsarists.1.desc
+    picture = GFX_report_event_monarchist_revolt
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		tag = RUS
+		
+		# Russia must have this flag
+		AND = {
+			has_country_flag = RUS_neo_reactionism
+		}
+		
+		# Russia must be a Dictatorship
+		RUS = {
+			has_government = nationalism
+			any_character = {
+				has_ideology = military_dictatorship
+			}
+		}
+		
+		# Russia must have this amount of popularity
+		RUS = {
+			monarchism > 0.3	# 30%
+		}
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Lets be cautious
+        name = acsw_russian_tsarists.1.a
+        ai_chance = { factor = 100 }
+		
+        hidden_effect = {
+			add_stability = -0.01
+			clr_country_flag = RUS_neo_reactionism
+			add_country_flag = RUS_russian_monarchists_1
+		}
+    }
+}
+
+# Monarchist Riots
+country_event = {
+    id = acsw_russian_tsarists.2
+    title = acsw_russian_tsarists.2.title
+    desc = acsw_russian_tsarists.2.desc
+    picture = GFX_report_event_monarchist_revolt
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		tag = RUS
+		
+		# Russia must have this flag
+		AND = {
+			has_country_flag = RUS_russian_monarchists_1
+		}
+		
+		# Russia must be a Dictatorship
+		RUS = {
+			has_government = nationalism
+			any_character = {
+				has_ideology = military_dictatorship
+			}
+		}
+		
+		# Russia must have this amount of popularity
+		RUS = {
+			monarchism > 0.3	# 30% or more
+		}
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Compensate for Peace
+        name = acsw_russian_tsarists.2.a
+        ai_chance = { factor = 50 }
+		
+        hidden_effect = {
+			add_stability = -0.01
+			clr_country_flag = RUS_russian_monarchists_1
+			add_country_flag = RUS_russian_monarchists_2
+		}
+    }
+	
+	option = { # Death to Rioters
+        name = acsw_russian_tsarists.2.a
+        ai_chance = { factor = 50 }
+		
+        hidden_effect = {
+			add_stability = -0.10
+		}
+    }
+}
+
+# Crisis Averted
+country_event = {
+    id = acsw_russian_tsarists.3
+    title = acsw_russian_tsarists.3.title
+    desc = acsw_russian_tsarists.3.desc
+    picture = GFX_report_event_monarchist_revolt
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		tag = RUS
+		
+		# Russia must have this flag
+		AND = {
+			has_country_flag = RUS_russian_monarchists
+		}
+		
+		# Russia must be a Dictatorship
+		RUS = {
+			has_government = nationalism
+			any_character = {
+				has_ideology = military_dictatorship
+			}
+		}
+		
+		# Russia must have this amount of popularity
+		RUS = {
+			monarchism > 0.3	# 30% or more
+		}
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Lets be cautious
+        name = acsw_russian_tsarists.3.a
+        ai_chance = { factor = 100 }
+		
+        hidden_effect = {
+			add_stability = 0.10
+			RUS_octobrist_party = yes
+			RUS_clear_monarchist_flags = yes
+		}
+    }
+}
+
+# Crisis Exacerbated
+country_event = {
+    id = acsw_russian_tsarists.4
+    title = acsw_russian_tsarists.4.title
+    desc = acsw_russian_tsarists.4.desc
+    picture = GFX_report_event_street_revolt
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		tag = RUS
+		
+		# Russia must have this flag
+		AND = {
+			has_country_flag = RUS_russian_monarchists_2
+			has_country_flag = RUS_displeased_loyalists		# Can gain from a basic random event caused by a focus
+		}
+		
+		# Russia must be a Dictatorship
+		RUS = {
+			has_government = nationalism
+			any_character = {
+				has_ideology = military_dictatorship
+			}
+		}
+		
+		# Russia must have this amount of popularity
+		RUS = {
+			monarchism > 0.3	# 30%
+		}
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Let's be cautious
+        name = acsw_russian_tsarists.4.a
+        ai_chance = { factor = 100 }
+		
+        hidden_effect = {
+			add_stability = -0.10
+			clr_country_flag = RUS_russian_monarchists
+			add_country_flag = RUS_russian_angered_monarchists
+		}
+    }
+}
+
+### Civil War Starts Here ###
+
+# A Brutal Turn
+country_event = {
+    id = acsw_russian_tsarists.5
+    title = acsw_russian_tsarists.5.title
+    desc = acsw_russian_tsarists.5.desc
+    picture = GFX_report_event_street_revolt
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+		tag = RUS
+		
+		# Russia must have this flag
+		AND = {
+			has_country_flag = RUS_russian_angered_monarchists
+		
+		# Russia must be a Dictatorship
+		RUS = {
+			has_government = nationalism
+			any_character = {
+				has_ideology = military_dictatorship
+			}
+		}
+		
+		# Russia must have this amount of popularity
+		RUS = {
+			monarchism > 0.3	# 30%
+		}
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Let's be cautious
+        name = acsw_russian_tsarists.5.a
+        ai_chance = { factor = 100 }
+		
+        hidden_effect = {
+			add_stability = -0.10
+			clr_country_flag = RUS_russian_monarchists
+			add_country_flag = RUS_russian_angered_monarchists
+		}
+    }
+}
+
+
+acsw_russian_tsarists.5
+acsw_russian_tsarists.6
+acsw_russian_tsarists.7

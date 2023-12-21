@@ -1,0 +1,70 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+### Diplomatic Only ###
+
+opinion_modifiers = {
+
+	influencing = {
+		value = 10
+	}
+	
+	influenced = {
+		value = 20
+	}
+	
+	radical_scum = {
+		value = -20
+	}
+	
+	has_our_lands = {
+		value = -20
+	}
+	
+	russian_irredentism = {
+		value = -40
+	}
+	
+	ukrainian_irredentism = {
+		value = -40
+	}
+	
+	nazi_regime = {
+		value = -50
+	}
+	
+	good_intentions = {
+		value = 25
+	}
+	
+	evil_intentions = {
+		value = -25
+	}
+	
+	praised = {
+		value = 10
+	}
+	
+	snubbed = {
+		value = -10
+	}
+	
+	protecting_us = {
+		value = 50
+	}
+	
+	protected_us = {
+		value = 50
+	}
+	
+	close_relationship = {
+		value = 50
+	}
+}

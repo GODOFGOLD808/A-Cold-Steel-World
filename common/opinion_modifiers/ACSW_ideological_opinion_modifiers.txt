@@ -1,0 +1,42 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+### Ideological Only ###
+
+opinion_modifiers = {
+
+	same_rulng_party = {
+		value = 30
+	}
+	
+	same_ideology = {
+		value = 20
+	}
+	
+	similar_ideology = {
+		value = 10
+	}
+	
+	distant_ideology = {
+		value = -5
+	}
+	
+	strange_ideology = {
+		value = -10
+	}
+	
+	different_ideology = {
+		value = -20
+	}
+	
+	radical_ideology = {
+		value = -30
+	}
+}

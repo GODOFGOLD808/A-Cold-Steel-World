@@ -1,0 +1,23 @@
+
+state={
+	id=951
+	name="STATE_951"
+
+	history={
+		owner = BOH
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BOH
+		#add_claim_by = AUS
+	}
+
+	provinces={
+		543 5283 7857 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=2.000
+}

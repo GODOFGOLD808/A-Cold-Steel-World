@@ -1,0 +1,85 @@
+#####################################
+#		Rhodesian Fireforce 		#
+#####################################
+
+##### Division Templates #####
+division_template = {
+	name = "Fireforce"
+	division_names_group = FIREFORCE_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		infantry = { x = 0 y = 4 }
+		motorized = { x = 0 y = 5 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+##### OOB #####
+
+units = {
+	####### Fireforce Division 1 #######
+	division= {	# "1st Rhodesian Fireforce"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 7872
+		division_template = "Fireforce"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	
+	####### Fireforce Division 2 #######
+	division= {	# "2nd Rhodesian Fireforce"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 1874
+		division_template = "Fireforce"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	
+	####### Fireforce Division 3 #######
+	division= {	# "3rd Rhodesian Fireforce"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 2151
+		division_template = "Fireforce"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	
+	####### Fireforce Division 4 #######
+	division= {	# "4th Rhodesian Fireforce"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 7842
+		division_template = "Fireforce"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	
+	####### Fireforce Division 5 #######
+	division= {	# "5th Rhodesian Fireforce"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 697
+		division_template = "Fireforce"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+}

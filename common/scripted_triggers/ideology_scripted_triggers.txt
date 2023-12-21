@@ -1,0 +1,33 @@
+### For the new Ideologies ###
+
+# Generic Categories
+has_collectiist_government = {
+	has_government = anarchism
+	has_government = communism
+}
+
+has_democratic_government = {
+	has_government = liberal
+	has_government = conservative
+}
+
+has_authoritarian_government = {
+	has_government = monarchism
+	has_government = nationalism
+}
+
+# Stalinism vs Communism
+has_character_with_stalinism = {
+	has_ideology = stalinism
+	AND = {
+		has_government = communism
+		OR = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+	AND = {
+		is_advisor = yes
+	}
+}

@@ -1,0 +1,76 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+### Political Advisor Traits ###
+
+leader_traits = {
+
+	black_army_revolutionary = {
+		random = no
+		anarchismism_drift = 0.01
+		army_defence_factor = 0.2
+		army_core_attack_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	soviet_socialist = {
+		random = no
+		communism_drift = 0.05
+		syndicalism_drift = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	disheveled_legislature = {
+		random = no
+		drift_defence_factor = -0.1
+		war_support_factor = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	last_string = {
+		random = no
+		political_power_gain = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	astute = {
+		random = no
+		stability_factor = 0.05
+		drift_defence_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	staple = {
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

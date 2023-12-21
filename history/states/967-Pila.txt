@@ -1,0 +1,25 @@
+state={
+	id=967
+	name="STATE_967"
+	
+	history={
+		owner = POL
+		victory_points = {
+			11260 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = POL
+		add_core_of = PRU
+		#add_claim_by = GER
+	}
+	
+	provinces={
+		9252 11260 11288 
+	}
+	manpower=71846
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

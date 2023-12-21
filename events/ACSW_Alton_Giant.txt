@@ -1,0 +1,45 @@
+#############################################
+#											#
+#			Robert Wadlow Events			#
+#											#
+#############################################
+
+add_namespace = acsw_giant
+
+# A New Record
+country_event = {
+    id = acsw_giant.1
+    title = acsw_giant.1.title
+    desc = acsw_giant.1.desc
+    picture = GFX_report_event_ukrainian_relatons
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+        tag = USA
+
+		# Timeframe
+        AND = {
+            date > 1940.9.1
+            date < 1940.10.1
+        }
+
+		# United States must Exist and own Illinois
+        AND = {
+            country_exists = USA
+			USA = {
+				owns_state = 395
+			}
+        }
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Magnificent!
+        name = acsw_giant.1.a
+        ai_chance = { factor = 100 }
+        custom_effect_tooltip = alton_giant_breaks_records
+    }
+}

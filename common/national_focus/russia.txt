@@ -1,0 +1,734 @@
+focus_tree = {
+	id = russian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1400 }
+	
+	#A German Ally
+	focus = {
+		id = RUS_a_german_ally
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RUS_looking_towards_kyiv  }
+	}
+
+	#Accord at Volgograd
+	focus = {
+		id = RUS_accord_at_volgograd
+		icon = GFX_goal_unknown
+		x = 3
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Unhinged Politics
+	focus = {
+		id = RUS_unhinged_politics
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_accord_at_volgograd  }
+		bypass = {
+			has_war = no
+		}
+		completion_reward = {
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#National Court
+	focus = {
+		id = RUS_national_court
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_unhinged_politics  }
+		completion_reward = {
+			add_timed_idea = {
+			    idea = dumas_moves
+			    days = 180
+			}
+			
+			
+			
+		}
+	}
+
+	#Looking Towards Kyiv
+	focus = {
+		id = RUS_looking_towards_kyiv
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_national_court  }
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = UKR
+			}
+			
+			
+			
+		}
+	}
+
+	#Push Towards Lvov
+	focus = {
+		id = RUS_push_towards_lvov
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_looking_towards_kyiv  }
+	}
+
+	#Charge Towards Odessa
+	focus = {
+		id = RUS_charge_towards_odessa
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RUS_looking_towards_kyiv  }
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	#Baltics in Sight
+	focus = {
+		id = RUS_baltics_in_sight
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_push_towards_lvov  }
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = EST
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = LAT
+			}
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = LIT
+			}
+		}
+	}
+
+	#Ease the Unrest
+	focus = {
+		id = RUS_ease_the_unrest
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_charge_towards_odessa  }
+	}
+
+	#Bessarabian Diplomacy
+	focus = {
+		id = RUS_bessarabian_diplomacy
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_baltics_in_sight  }
+	}
+
+	#The Ruthenian Question
+	focus = {
+		id = RUS_the_ruthenian_question
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_ease_the_unrest  }
+	}
+
+	#War with Romania
+	focus = {
+		id = RUS_war_with_romania
+		icon = GFX_goal_unknown
+		x = 0
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_bessarabian_diplomacy  }
+	}
+
+	#Deal with Romania
+	focus = {
+		id = RUS_deal_with_romania
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_bessarabian_diplomacy  }
+	}
+
+	#The Red Conspiracy
+	focus = {
+		id = RUS_the_red_conspiracy
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_national_court  }
+		completion_reward = {
+			hidden_effect = {
+			country_event = {
+			    id = russian_socialism.1
+			    days = 10
+			    random = 50
+			    random_days = 10
+			}
+			}
+		}
+	}
+
+	#Karl's Philosophy
+	focus = {
+		id = RUS_karlsphilosophy
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_red_conspiracy  }
+	}
+
+	#Centralized Monarchy
+	focus = {
+		id = RUS_centralized_monarchy
+		icon = GFX_goal_unknown
+		x = 16
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_unfair_popularity  }
+	}
+
+	#Marxism-Leninism
+	focus = {
+		id = RUS_marxismleninism
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_karlsphilosophy  }
+	}
+
+	#Ratify Socialism
+	focus = {
+		id = RUS_ratify_socialism
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_karlsphilosophy  }
+		mutually_exclusive = { focus = RUS_marxismleninism  }
+	}
+
+	#A Red Menace
+	focus = {
+		id = RUS_a_red_menace
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_marxismleninism  }
+	}
+
+	#A  Red Republic
+	focus = {
+		id = RUS_aredrepublic
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_ratify_socialism  }
+	}
+
+	#Cult of Science and Personality
+	focus = {
+		id = RUS_cult_of_science_and_personality
+		icon = GFX_goal_unknown
+		x = 4
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_a_red_menace  }
+	}
+
+	#Syndical Methods
+	focus = {
+		id = RUS_syndical_methods
+		icon = GFX_goal_unknown
+		x = 6
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_aredrepublic  }
+	}
+
+	#Revamp our Autocracy
+	focus = {
+		id = RUS_revamp_our_autocracy
+		icon = GFX_goal_unknown
+		x = 10
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_national_court  }
+	}
+
+	#Authoritarian Democracy
+	focus = {
+		id = RUS_authoritarian_democracy
+		icon = GFX_goal_unknown
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_revamp_our_autocracy  }
+		mutually_exclusive = { focus = RUS_preservation_of_state  }
+	}
+
+	#Preservation of State
+	focus = {
+		id = RUS_preservation_of_state
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_revamp_our_autocracy  }
+	}
+
+	#Elect a Strong Head
+	focus = {
+		id = RUS_elect_a_strong_head
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_authoritarian_democracy  }
+	}
+
+	#Empower Lavr
+	focus = {
+		id = RUS_empower_lavr
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_preservation_of_state  }
+	}
+
+	#A Newer Motherland
+	focus = {
+		id = RUS_a_newer_motherland
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_elect_a_strong_head  focus = RUS_empower_lavr  }
+	}
+
+	#Ban on Decadence
+	focus = {
+		id = RUS_ban_on_decadence
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_a_newer_motherland  }
+	}
+
+	#Internationalist Rivals
+	focus = {
+		id = RUS_internationalist_rivals
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_ban_on_decadence  }
+	}
+
+	#Cleansing of Political Heresey
+	focus = {
+		id = RUS_cleansing_of_political_heresey
+		icon = GFX_goal_unknown
+		x = 8
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_internationalist_rivals  }
+	}
+
+	#Bleed them Dry
+	focus = {
+		id = RUS_bleed_them_dry
+		icon = GFX_goal_unknown
+		x = 10
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_repair_our_black_wing  }
+	}
+
+	#Traditional Values
+	focus = {
+		id = RUS_traditional_values
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_revamp_our_autocracy  }
+	}
+
+	#The Black Hundreds
+	focus = {
+		id = RUS_the_black_hundreds
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_traditional_values  }
+	}
+
+	#From Right to Far-Right
+	focus = {
+		id = RUS_from_right_to_farright
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_black_hundreds  }
+	}
+
+	#Corporate Ultranationalism
+	focus = {
+		id = RUS_corporate_ultranationalism
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_from_right_to_farright  }
+	}
+
+	#Repair our Black Wing
+	focus = {
+		id = RUS_repair_our_black_wing
+		icon = GFX_goal_unknown
+		x = 10
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_corporate_ultranationalism  }
+	}
+
+	#The Restoration
+	focus = {
+		id = RUS_the_restoration
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_revamp_our_autocracy  }
+	}
+
+	#Seek Candidates
+	focus = {
+		id = RUS_seek_candidates
+		icon = GFX_goal_unknown
+		x = 12
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_restoration  }
+	}
+
+	#Imperial Coronation
+	focus = {
+		id = RUS_imperial_coronation
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_from_right_to_farright  focus = RUS_seek_candidates  }
+	}
+
+	#The Two Headed Eagle Rises Again
+	focus = {
+		id = RUS_the_two_headed_eagle_rises_again
+		icon = GFX_goal_unknown
+		x = 12
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_imperial_coronation  }
+	}
+
+	#Irredentist Policies
+	focus = {
+		id = RUS_irredentist_policies
+		icon = GFX_goal_unknown
+		x = 12
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_the_two_headed_eagle_rises_again  }
+	}
+
+	#Constitutional Tsardom
+	focus = {
+		id = RUS_constitutional_tsardom
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_restoration  }
+		mutually_exclusive = { focus = RUS_absolute_tsardom  }
+	}
+
+	#Reform the Duma
+	focus = {
+		id = RUS_reform_the_duma
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_constitutional_tsardom  }
+	}
+
+	#Fair Popularity
+	focus = {
+		id = RUS_fair_popularity
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_reform_the_duma  }
+	}
+
+	#Decentralized Parliament
+	focus = {
+		id = RUS_decentralized_parliament
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_fair_popularity  }
+	}
+
+	#Federated Empire
+	focus = {
+		id = RUS_federated_empire
+		icon = GFX_goal_unknown
+		x = 14
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_decentralized_parliament  }
+	}
+
+	#Absolute Tsardom
+	focus = {
+		id = RUS_absolute_tsardom
+		icon = GFX_goal_unknown
+		x = 16
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_restoration  }
+	}
+
+	#Dismantle the Duma
+	focus = {
+		id = RUS_dismantle_the_duma
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_absolute_tsardom  }
+	}
+
+	#Unfair Popularity
+	focus = {
+		id = RUS_unfair_popularity
+		icon = GFX_goal_unknown
+		x = 16
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_dismantle_the_duma  }
+	}
+
+	#Unitary Empire
+	focus = {
+		id = RUS_unitary_empire
+		icon = GFX_goal_unknown
+		x = 16
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_centralized_monarchy  }
+	}
+
+}

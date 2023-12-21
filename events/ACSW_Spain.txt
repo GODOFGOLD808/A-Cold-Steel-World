@@ -1,0 +1,99 @@
+### Spanish Civil War ###
+
+# 1936 Election
+country_event = {
+	id = acsw_spain.1
+	title = acsw_spain.1.t
+	desc = acsw_spain.1.d
+	picture = GFX_report_event_spanish_elections
+	
+	is_triggered_only = no
+	
+	trigger = {
+		# Must be Spain of course
+		tag = SPR
+		
+		# Spain must be Democratic
+		AND = {
+			spain_is_democratic = yes
+		}
+	}
+	
+	immediate = {
+		# For Fascists
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.1
+		}
+		
+		# For Anarchists
+		add_popularity = {
+			ideology = anarchism
+			popularity = 0.02
+		}
+	}
+	
+	option = { # 
+		name = acsw_spain.1.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			 
+		}
+	}
+	option = { # 
+		name = acsw_spain.1.b
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			 
+		}
+	}
+	option = { # 
+		name = acsw_spain.1.c
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			 
+		}
+	}
+}
+
+# Investigations go Arye
+country_event = {
+	id = acsw_spain.2
+	title = acsw_spain.2.t
+	desc = acsw_spain.2.d
+	picture = GFX_report_event_spanish_elections
+	
+	is_triggered_only = no
+	
+	trigger = {
+		# Must be Spain of course
+		tag = SPR
+		
+		# Must comnplete this Focus
+		has_completed_focus = 
+		
+		# Spain must be Democratic
+		AND = {
+			spain_is_democratic = yes
+		}
+	}
+	
+	immediate = {
+		# TBA
+	}
+	
+	option = { # Fortify the Dnieper
+		name = acsw_spain.2.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			
+		}
+	}
+	option = { # Fortify the Dnieper
+		name = acsw_spain.2.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			
+		}
+	}
+}

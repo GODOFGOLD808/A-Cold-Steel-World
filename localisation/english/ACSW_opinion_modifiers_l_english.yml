@@ -1,0 +1,31 @@
+﻿l_english:
+ ### New Opinion Modifiers ###
+ 
+ # Puppet Opinion Modifiers
+ loyal:0 "Loyal"
+ backstabbed:0 "Backstabbed"
+ 
+ # New Diplomatic Modifiers
+ influencing:0 "Influencing"
+ influenced:0 "Influenced"
+ radical_scum:0 "Radical Scum"
+ has_our_lands:0 "Has our Lands"
+ russian_irredentism:0 "Russian Irredentism"
+ ukrainian_irredentism:0 "Ukrainian Irredentism"
+ nazi_regime:0 "Nazis!!!"
+ good_intentions:0 "Good Intentions"
+ evil_intentions:0 "Evil Intentions"
+ praised:0 "Praised"
+ snubbed:0 "Snubbed"
+ protecting_us:0 "Protecting Us"
+ protected_us:0 "Protected Us"
+ close_relationship:0 "Close Relationship"
+ 
+ # Ideological Opinion Modifiers
+ same_rulng_party:0 "Same Ruling Party"
+ same_ideology:0 "Same Ideology"
+ similar_ideology:0 "Similar Ideology"
+ distant_ideology:0 "Distant Ideology"
+ strange_ideology:0 "Strange Ideology"
+ different_ideology:0 "Different Ideology"
+ 

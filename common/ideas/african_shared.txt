@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+
+		apartheid_act = {
+					
+			allowed = {
+				any_state = {
+					is_on_continent = africa
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = apartheid
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+}

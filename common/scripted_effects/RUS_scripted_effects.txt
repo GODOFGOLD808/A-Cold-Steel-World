@@ -1,0 +1,22 @@
+### Russian Scripted Effects ###
+
+RUS_tsarists_appeased = {
+	if = {
+		limit = {
+			has_idea = RUS_neo_tsarists_pleased
+		}
+		set_country_flag = RUS_pleased_loyalists
+		custom_effect_tooltip = RUS_imperialist_revival
+	}
+}
+
+RUS_tsarists_unappeased = {
+	if = {
+		limit = {
+			has_idea = RUS_neo_tsarists_displeased
+		}
+		set_country_flag = RUS_displeased_loyalists
+		custom_effect_tooltip = RUS_imperialist_radicals
+	}
+}
+

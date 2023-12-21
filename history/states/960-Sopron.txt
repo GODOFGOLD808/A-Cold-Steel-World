@@ -1,0 +1,23 @@
+state={
+	id=960
+	name="STATE_960"
+	
+	history={
+		owner = HUN
+		victory_points = {
+			686 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = HUN
+	}
+	
+	provinces={
+		686 11627 
+	}
+	manpower=62116
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=3.000
+}

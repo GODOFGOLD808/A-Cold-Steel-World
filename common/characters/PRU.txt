@@ -1,0 +1,49 @@
+### Prussia ###
+
+# For the Civil War
+characters={
+	PRU_national_peoples_council={
+		name=PRU_national_peoples_council
+		portraits={
+			civilian={
+				large="GFX_portrait_german_national_peoples_council"
+			}
+		}
+		country_leader={
+			ideology=military_dictatorship
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
+
+# For the Monarchists
+characters={
+	PRU_wilhelm_ii={
+		name=PRU_wilhelm_ii
+		portraits={
+			civilian={
+				large="GFX_portrait_german_wilhelm_ii"
+			}	
+		}
+		country_leader={
+			ideology=kaiser
+			expire="1941.6.4.1"
+			id=-1
+		}
+	}
+
+	PRU_wilhelm_iii={
+		name=PRU_wilhelm_iii
+		portraits={
+			civilian={
+				large="GFX_portrait_german_wilhelm_iii"
+			}	
+		}
+		country_leader={
+			ideology=kaiser
+			expire="1951.7.20.1"
+			id=-1
+		}
+	}
+}

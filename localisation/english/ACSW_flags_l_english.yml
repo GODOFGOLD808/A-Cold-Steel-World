@@ -1,0 +1,35 @@
+﻿l_english:
+ ### New Country Flags ###
+ 
+ # RUS
+ RUS_pleased_loyalists:0 "Recently Pleased Tsarists"
+ RUS_displeased_loyalists:0 "Recently Displeased Tsarists"
+ 
+ RUS_russian_monarchists:0 "Russian Monarchists"
+ 
+ # GER
+ GER_flee_berlin:0 "Flee Berlin"
+ GER_defend_berlin:0 "Defend Berlin"
+ GER_tri_civil_war:0 "German Tri-Civil War"
+ GER_tri_civil_war_begins:0 "German Tri-Civil War Begins"
+ GER_tri_civil_war_concludes:0 "German Tri-Civil War Concludes"
+ 
+ ### New State Flags ###
+ democratic_germans_withdrawn:0 "The Republicans Withdrawn"
+ nationalist_germans_withdrawn:0 "The Nationalists Withdrawn"
+ communist_germans_withdrawn:0 "The Communists Withdrawn"
+ 
+ ### New Government Flags ###
+ is_anarchist:0 "Is a Anarchist"
+ is_authoritarian:0 "Is an Authoritarian"
+ is_communist:0 "Is a Communist"
+ is_democrat:0 "Is a Democrat"
+ is_dictator:0 "Is a Dictator"
+ is_fascist:0 "Is a Fascist"
+ is_monarch:0 "Is a Monarch"
+ is_republican:0 "Is a Republican"
+ is_socialist:0 "Is a Socialist"
+ is_totalitarian:0 "Is a Totalitarian"
+ 
+ ### New Other Flags ###
+ 

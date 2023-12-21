@@ -1,0 +1,14 @@
+
+# General Peace ACSW Edition
+music = {
+	name = "acsw_general_peace_1"
+	file = "acsw_station/Westerwaldlied.ogg"
+	volume = 0.65
+}
+
+# General War ACSW Edition
+music = {
+	name = "acsw_general_war_1"
+	file = "acsw_station/March_of_the_Kornilov_Regiment.ogg"
+	volume = 0.65
+}

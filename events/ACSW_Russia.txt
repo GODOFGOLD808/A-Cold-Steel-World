@@ -1,0 +1,162 @@
+#########################################
+#										#
+#		Nationalist Russia Events		#
+#										#
+#########################################
+
+add_namespace = acsw_russia 
+
+# Russian Relations with Ukraine
+country_event = {
+    id = acsw_russia.1
+    title = acsw_russia.1.title
+    desc = acsw_russia.1.desc
+    picture = GFX_report_event_ukrainian_relatons
+
+    is_triggered_only = no
+	
+	fire_only_once = yes
+
+    trigger = {
+        tag = RUS
+
+		# Timeframe
+        AND = {
+            date > 1930.1.1
+            date < 1930.3.1
+        }
+
+		# Ukraine must Exist
+        AND = {
+            country_exists = UKR
+        }
+
+		# Russia must be a Dictatorship
+        RUS = {
+            has_government = nationalism
+            any_character = {
+                has_ideology = military_dictatorship
+            }
+        }
+
+		# Ukraine must be Anarchist
+        UKR = {
+            has_government = anarchism
+        }
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = { # Those Dogs will get there's!
+        name = acsw_russia.1.a
+        ai_chance = { factor = 100 }
+        add_political_power = -10
+        add_opinion_modifier = {
+            target = UKR
+            modifier = radical_scum
+        }
+        UKR = {
+            add_opinion_modifier = {
+                target = RUS
+                modifier = has_our_lands
+            }
+        }
+    }
+}
+
+# Russian Development
+country_event = {
+	id = acsw_russia.2
+	title = acsw_russia.2.title
+	desc = acsw_russia.2.desc
+	picture = GFX_report_event_russian_development
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		
+		# Russia must have this Idea/National Spirit
+		AND = {
+			#has_idea = RUS_national_investment_pool
+		}
+		
+		# Russia must be a Dictatorship
+		AND = {
+			has_government = nationalism
+			has_ideology = military_dictatorship
+		}
+	}
+	
+	immediate = {
+		remove_idea = RUS_national_investment_pool
+	}
+	
+	option = { # Invest in Civilian
+		name = acsw_russia.2.a
+		ai_chance = { factor = 34 }
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = civilian_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = civilian_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = civilian_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	
+	option = { # Invest in Transportation
+		name = acsw_russia.2.b
+		ai_chance = { factor = 33 }
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	
+	option = { # Invest in Military
+		name = acsw_russia.2.c
+		ai_chance = { factor = 33 }
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}

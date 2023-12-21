@@ -1,0 +1,20 @@
+﻿l_english:
+ ### ACSW Music ###
+ 
+ # Music Station
+ acsw_station:0 "A Cold Steel World Radio"
+ 
+ # Tracklist
+ March_of_the_Kornilov_Regiment:0 "March of the Kornilov Regiment"
+ Westerwaldlied:0 "Westerwaldlied"
+ 
+ # Peacetime
+ acsw_general_peace_1:0 "General Peace 1"
+ acsw_general_peace_2:0 "General Peace 2"
+ acsw_general_peace_3:0 "General Peace 3"
+ 
+ # Wartime
+ acsw_general_war_1:0 "General War 1"
+ acsw_general_war_2:0 "General War 2"
+ acsw_general_war_3:0 "General War 3"
+ 

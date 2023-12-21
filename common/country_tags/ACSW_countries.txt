@@ -1,0 +1,20 @@
+# Europe
+BAV = "countries/Bavaria.txt"
+BOH = "countries/Bohemia.txt"
+CSR	= "countries/Jiangxi.txt"
+PRU = "countries/Prussia.txt"
+RUS	= "countries/Russia.txt"
+RUT	= "countries/Ruthenia.txt"
+WUR	= "countries/Wurttemberg.txt"
+
+# Asia
+
+
+# Africa
+
+
+# North America
+
+
+# South America
+PRE = "countries/Peru.txt"

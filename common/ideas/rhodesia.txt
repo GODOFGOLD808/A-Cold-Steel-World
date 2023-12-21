@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+
+		RHO_african_breadbasket = {
+					
+			allowed = {
+				original_tag = RHO
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RHO_african_breadbasket
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		RHO_bushtick_mine = {
+					
+			allowed = {
+				original_tag = RHO
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = RHO_bushtick_mine
+			
+			modifier = {
+				production_speed_buildings_factor = 0.3
+			}
+		}
+	}
+}

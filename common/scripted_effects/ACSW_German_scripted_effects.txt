@@ -1,0 +1,6 @@
+GER_tri_civil_war_starts_flee = {
+	if = {
+		limit = {
+		}
+	}
+}

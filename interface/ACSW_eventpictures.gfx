@@ -1,0 +1,47 @@
+### New Events ###
+
+spriteTypes = {
+	
+	# Russian
+	spriteType = {
+		name = "GFX_report_event_russian_army"
+		texturefile = "gfx/event_pictures/Russian/report_event_russian_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_kornilovists"
+		texturefile = "gfx/event_pictures/Russian/report_event_russian_kornilovists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_moscow_revolt"
+		texturefile = "gfx/event_pictures/Russian/report_event_russian_revolt_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_street_revolt"
+		texturefile = "gfx/event_pictures/Russian/report_event_russian_revolt_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_monarchist_revolt"
+		texturefile = "gfx/event_pictures/Russian/report_event_russian_revolt_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_kornilov_officers"
+		texturefile = "gfx/event_pictures/Russian/report_event_russian_kornilov_with_officers.dds"
+	}
+	
+	# Ukrainian
+	
+	
+	# German
+	
+	
+	# French
+	
+	
+	# Polish
+	
+}

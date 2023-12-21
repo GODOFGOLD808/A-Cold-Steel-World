@@ -1,0 +1,11 @@
+### Soviet Russia Scripted Effects ###
+
+SOV_soviet_cities = {
+	if = {
+		limit = {
+			has_idea = RUS_neo_tsarists_pleased
+		}
+		set_country_flag = RUS_pleased_loyalists
+		custom_effect_tooltip = RUS_imperialist_revival
+	}
+}

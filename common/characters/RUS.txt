@@ -1,0 +1,267 @@
+# Aleksandra Kollontay has an unsed portrait
+# Viktor Baydalakov has an unused portrait
+
+characters = {
+	
+	### Country Leaders ###
+	RUS_lavr_kornilov = {
+		name = RUS_lavr_kornilov
+		desc = RUS_lavr_kornilov_desc
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_lavr_kornilov
+			}
+		}
+		country_leader = {
+			ideology = military_dictatorship
+			expire = "1950.1.1.1"
+			traits = {
+				military_modernizer
+				headstrong
+				dictator
+			}
+			id = -1
+		}
+	}
+	
+	RUS_leon_trotsky = {
+		name = RUS_leon_trotsky
+		desc = RUS_leon_trotsky_desc
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_leon_trotsky
+			}
+		}
+		country_leader = {
+			ideology = trotskyism
+			expire = "1950.1.1.1"
+			traits = {
+				soviet_socialist
+			}
+			id = -1
+		}
+	}
+	
+	RUS_tsar_vladimir_kirillovich = {
+		name = RUS_tsar_vladimir_kirillovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_vladimir_kirillovich"
+			}
+		}
+		country_leader = {
+			ideology = tsar
+			expire = "1953.3.1.1"
+			id = -1
+			traits = {
+				emperor_and_autocrat_of_all_the_russias
+			}
+		}
+	}
+	
+	RUS_konstantin_rodzayevsky = {
+		instance = {
+			allowed = {
+				has_dlc = "No Step Back"
+			}
+			name = RUS_konstantin_rodzayevsky
+
+			portraits = {
+				civilian = {
+					large = GFX_portrait_RUS_konstantin_rodzayevsky
+				}
+				army = {
+					small = "GFX_idea_konstantin_rodzaevsky"
+				}
+			}
+
+			country_leader = {
+				ideology = fascism_ideology
+				traits = { fascist_orchestrator }
+				expire = "1953.3.1.1"
+				id = -1
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "No Step Back" }
+			}
+			name = RUS_konstantin_rodzayevsky
+
+			portraits = {
+				army = {
+					small = "GFX_idea_konstantin_rodzaevsky"
+				}
+			}
+			advisor = {
+				slot = political_advisor
+				idea_token = konstantin_rodzaevsky
+				allowed = {
+					original_tag = SOV
+				}
+				visible = {
+					NOT = {
+						has_character_flag = RUS_character_purged_flag 
+					}
+				}
+				available = {
+					
+				}
+				traits = {
+					fascist_demagogue 
+				}
+				do_effect = {
+					NOT = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 0.000
+				}
+			}
+		}
+	}
+
+	RUS_aleksandr_kerensky = {
+		name = RUS_aleksandr_kerensky
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RUS_aleksandr_kerensky
+			}
+			army = {
+				small = "GFX_idea_alexander_kerensky"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		allowed_civil_war = { tag = SOV}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_aleksandr_kerensky
+			allowed = {
+					original_tag = SOV
+			}
+			visible = {
+				NOT = {
+					has_character_flag = RUS_character_purged_flag 
+				}
+			}
+			available = {
+				
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	
+	### Advisors/Ministers ###
+	
+	
+	
+	### Military Leaders ###
+	RUS_aleksandr_krymov = {
+		name = RUS_aleksandr_krymov
+		desc = RUS_aleksandr_krymov_desc
+
+		portraits = {
+			army={
+				large="GFX_portrait_russian_aleksandr_krymov"
+				small="GFX_idea_russian_aleksandr_krymov_small"
+			}
+		}
+		field_marshal={
+			traits={
+				
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	RUS_alexander_kutepov = {
+		name = RUS_alexander_kutepov
+		desc = RUS_alexander_kutepov_desc
+
+		portraits = {
+			army={
+				large="GFX_portrait_russian_alexander_kutepov"
+				small="GFX_idea_russian_alexander_kutepov_small"
+			}
+		}
+		field_marshal={
+			traits={
+				
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	RUS_boris_savinkov = {
+		name = RUS_boris_savinkov
+		desc = RUS_boris_savinkov_desc
+
+		portraits = {
+			army={
+				large="GFX_portrait_russian_boris_savinkov"
+			}
+		}
+		corps_commander={
+			traits={
+				
+			}
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	RUS_vladimir_vitkovsky = {
+		name = RUS_vladimir_vitkovsky
+		desc = RUS_vladimir_vitkovsky_desc
+
+		portraits = {
+			army={
+				large="GFX_portrait_russian_vladimir_vitkovsky"
+			}
+		}
+		corps_commander={
+			traits={
+				
+			}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

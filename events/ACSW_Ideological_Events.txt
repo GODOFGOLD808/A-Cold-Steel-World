@@ -1,0 +1,171 @@
+add_namespace = acsw_ideologies
+
+#acsw_ideologies.1
+#acsw_ideologies.2
+#acsw_ideologies.3
+#acsw_ideologies.4
+
+# Non-Aligned Politics
+country_event = {
+	id = acsw_ideologies.5
+	title = acsw_ideologies.5.title
+	desc = acsw_ideologies.5.desc
+	picture = GFX_report_event_non_aligned
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	trigger = {
+		# Playing country must exist
+		any_other_country = {
+			tag = ROOT
+		}
+		
+		# Must have certain popularity
+		AND = {
+			neutrality > 0.50
+		}
+		
+		# Cannot be this ideology group as ruling party
+		AND = {
+			NOT = {
+				has_govrnment = neutrality
+			}
+		}
+		
+		# Country must have a minister with one of these traits
+		OR = {
+			has_idea_with_trait = autocratic_advocate
+		}
+		OR = {
+			has_idea_with_trait = nihilist_revolutionary
+		}
+	}
+	
+	option = { # We shall go Monarchist
+		name = acsw_ideologies.5.a
+		ai_chance = { factor = 50  }
+		trigger = {
+			has_idea_with_trait = autocratic_advocate
+		}
+	}
+	
+	option = { # We shall go Anarchist
+		name = acsw_ideologies.5.b
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_idea_with_trait = nihilist_revolutionary
+		}
+	}
+	
+	option = { # We shall become Authoritarian
+		name = acsw_ideologies.5.c
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_idea_with_trait = undemocratic_repressor
+		}
+	}
+}
+
+#acsw_ideologies.6
+#acsw_ideologies.7
+#acsw_ideologies.8
+
+# Fascist Politics
+country_event = {
+	id = acsw_ideologies.9
+	title = acsw_ideologies.9.title
+	desc = acsw_ideologies.9.desc
+	picture = GFX_report_event_nationalism
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	trigger = {
+		# Playing country must exist
+		any_other_country = {
+			tag = ROOT
+		}
+		
+		# Must have certain popularity
+		AND = {
+			nationalism > 0.50
+		}
+		
+		# Country must have a minister with one of these traits
+		OR = {
+			has_idea_with_trait = militaristic_chauvinist
+		}
+		OR = {
+			has_idea_with_trait = nazi_agitator
+		}
+	}
+	
+	option = { # We shall be a Military Dictatorship
+		name = acsw_ideologies.9.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_idea_with_trait = militaristic_chauvinist
+		}
+		
+		any_other_country = {
+			any_other_country = {
+				NOT = {
+					set_party_name = {
+						ideology = nationalism
+						long_name = generic_military_dictatorship_party_long
+						name = generic_military_dictatorship_party
+					}
+					
+				}
+			}
+		}
+	}
+	
+	option = { # We shall become Nazis
+		name = acsw_ideologies.9.b
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_idea_with_trait = nazi_agitator
+		}
+		
+		any_other_country = {
+			any_other_country = {
+				NOT = {
+					set_party_name = {
+						ideology = neutrality
+						long_name = generic_nazism_party_long
+						name = generic_nazism_party
+					}
+				}
+			}
+		}
+	}
+	
+	option = { # We shall become Nazis
+		name = acsw_ideologies.9.c
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_idea_with_trait = nazi_agitator
+		}
+		
+		any_other_country = {
+			any_other_country = {
+				NOT = {
+					set_party_name = {
+						ideology = neutrality
+						long_name = generic_nazism_party_long
+						name = generic_nazism_party
+					}
+				}
+			}
+		}
+	}
+}
+

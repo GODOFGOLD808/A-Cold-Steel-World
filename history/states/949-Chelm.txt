@@ -1,0 +1,23 @@
+state={
+	id=949
+	name="STATE_949"
+	
+	history={
+		owner = POL
+		victory_points = {
+			9452 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = POL
+	}
+	
+	provinces={
+		6580 9452 11466 
+	}
+	manpower=60231
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=2.000
+}

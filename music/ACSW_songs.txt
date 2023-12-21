@@ -1,0 +1,33 @@
+
+music_station = "acsw_station"
+
+# General Peace ACSW Edition
+music = {
+	song = "Westerwaldlied"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			tag = GER
+			has_war = yes
+			has_government = nationalism
+			has_government = fascism
+		}		
+	}	
+}
+
+# General War ACSW Edition
+music = {
+	song = "March_of_the_Kornilov_Regiment"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			tag = RUS
+			has_war = yes
+			has_government = nationalism
+		}		
+	}	
+}

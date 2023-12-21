@@ -1,0 +1,21 @@
+### Prussia ###
+
+# For the Civil War
+characters={
+	BAV_german_council_republic={
+		name=BAV_german_council_republic
+		portraits={
+			civilian={
+				large="GFX_portrait_german_council_republic"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			traits={ disheveled_legislature }
+			id=-1
+		}
+	}
+}
+
+# For Others

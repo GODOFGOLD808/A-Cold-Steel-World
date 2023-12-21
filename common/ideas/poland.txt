@@ -1,0 +1,29 @@
+ideas = {
+
+	country = {
+		POL_unstable_government = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.3
+				political_advisor_cost_factor = 1
+				
+				communism_drift = 0.1
+				neutrality_drift = 0.1
+				fascism_drift = 0.1
+				
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+}

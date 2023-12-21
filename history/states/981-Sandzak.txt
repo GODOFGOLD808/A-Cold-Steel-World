@@ -1,0 +1,21 @@
+state={
+	id=981
+	name="STATE_981"
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = YUG
+		add_core_of = SER
+	}
+	
+	provinces={
+		3922 3939 
+	}
+	manpower=24680
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+	state_category=rural
+}

@@ -1,0 +1,23 @@
+state={
+	id=973
+	name="STATE_973"
+	
+	history={
+		owner = SAF
+		victory_points = {
+			7900 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SAF
+	}
+	
+	provinces={
+		7900 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category=rural
+}

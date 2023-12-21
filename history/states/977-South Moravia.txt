@@ -1,0 +1,26 @@
+state={
+	id=977
+	name="STATE_977"
+	
+	history={
+		owner = BOH
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			6573 1 
+		}
+		add_core_of = BOH
+		#add_claim_by = AUS
+	}
+	
+	provinces={
+		557 11525 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category=rural
+}

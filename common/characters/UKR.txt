@@ -1,0 +1,37 @@
+### Ukraine ###
+characters = {
+
+	UKR_nestor_makhno = {
+		name = UKR_nestor_makhno
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ukr_nestor_makhno"
+			}
+		}
+		country_leader = {
+			ideology = platformism
+			expire = "1965.3.1.1"
+			id = -1
+			traits = {
+				black_army_revolutionary
+			}
+		}
+	}
+	
+	UKR_viktor_bilash = {
+		name = UKR_viktor_bilash
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ukr_viktor_bilash"
+			}
+		}
+		country_leader = {
+			ideology = platformism
+			expire = "1965.3.1.1"
+			id = -1
+			traits = {
+				black_army_revolutionary
+			}
+		}
+	}
+}

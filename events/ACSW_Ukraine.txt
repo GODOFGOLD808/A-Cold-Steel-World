@@ -1,0 +1,30 @@
+# Russian Development #
+country_event = {
+	id = acsw_ukraine.1
+	title = acsw_ukraine.1.t
+	desc = acsw_ukraine.1.d
+	picture = GFX_report_event_ukraine_
+	
+	is_triggered_only = no
+	
+	trigger = {
+		tag = RUS
+		
+		# Ukraine must have this Idea/National Spirit
+		AND = {
+			#has_idea = UKR_???
+		}
+		
+		# Ukraine must be Anarchist
+		AND = {
+			has_government = neutrality
+			has_ideology = anarchism
+		}
+	}
+	
+	option = { # Fortify the Dnieper
+		name = acsw_ukraine.1.a
+		ai_chance = { factor = 100 }
+		UKR_fortify_the_dnieper = yes
+	}
+}

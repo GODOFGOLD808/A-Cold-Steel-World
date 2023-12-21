@@ -1,0 +1,23 @@
+state={
+	id=972
+	name="STATE_972"
+	
+	history={
+		owner = SAF
+		victory_points = {
+			4556 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SAF
+	}
+	
+	provinces={
+		4556 
+	}
+	manpower=79000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pastoral
+}

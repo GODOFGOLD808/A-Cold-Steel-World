@@ -1,0 +1,141 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_operative_unknown"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown"
+		texturefile = "gfx/leaders/leader_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown_female"
+		texturefile = "gfx/leaders/leader_unknown_female.dds"
+	}
+	
+	### Russian Shared ###
+
+	spriteType = {
+		name = "GFX_portrait_lavr_kornilov"
+		texturefile = "gfx/leaders/Russian/Portrait_Russian_Lavr_Kornilov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_leon_trotsky"
+		texturefile = "gfx/leaders/Russian/Portrait_Russian_Leon_Trotsky.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_vladimir_kirillovich"
+		texturefile = "gfx/leaders/Russian/Portrait_Russian_Vladimir_Kirillovich.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_mikhail_frunze"
+		texturefile = "gfx/leaders/Russian/Portrait_Russian_Mikhail_Frunze.dds"
+	}
+	
+	### UKR ###
+
+	spriteType = {
+		name = "GFX_portrait_ukr_nestor_makhno"
+		texturefile = "gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.dds"
+	}
+	
+	### German Shared ###
+	
+	spriteType = {
+		name = "GFX_portrait_german_paul_von_hindenburg"
+		texturefile = "gfx/leaders/German/Portrait_German_Paul_von_Hindenburg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_german_national_peoples_council"
+		texturefile = "gfx/leaders/German/Portrait_German_National_Peoples_Council.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_german_council_republic"
+		texturefile = "gfx/leaders/German/Portrait_German_Council_Republic.dds"
+	}
+	
+	### USA ###
+	
+	spriteType = {
+		name = "GFX_portrait_american_franklin_delano_roosevelt"
+		texturefile = "gfx/leaders/American/Portrait_American_franklin_delano_roosevelt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_american_alf_landon"
+		texturefile = "gfx/leaders/American/Portrait_American_alf_landon.dds"
+	}
+	
+	### SPR ###
+	
+	spriteType = {
+		name = "GFX_portrait_spr_juan_garcia_oliver"
+		texturefile = "gfx/leaders/USA/Portrait_SPR_Juan_Garcia_Oliver_.dds"
+	}
+	
+	### ITA ###
+	
+	spriteType = {
+		name = "GFX_portrait_ita_benito_mussolini"
+		texturefile = "gfx/leaders/USA/Portrait_ITA_Benito_Mussolini.dds"
+	}
+	
+	### ENG ###
+	
+	spriteType = {
+		name = "GFX_portrait_eng_winston_churchill"
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_Winston_Churchill.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_eng_ramsay_macdonald"
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_Ramsay_MacDonald.dds"
+	}
+	
+	### FRA ###
+	
+	spriteType = {
+		name = "GFX_portrait_fra_pierre_laval"
+		texturefile = "gfx/leaders/FRA/Portrait_FRA_Pierre_Laval.dds"
+	}
+	
+	### JAP ###
+
+	spriteType = {
+		name = "GFX_portrait_jap_hirohito"
+		texturefile = "gfx/leaders/UKR/Portrait_JAP_Hirohito.dds"
+	}
+	
+	###################
+	# Generic Leaders #
+	###################
+	
+	# Middle East
+	spriteType = {
+		name = "GFX_Portrait_Middle_Eastern_Generic_1"
+		texturefile = "gfx/leaders/Middle_Eastern/Portrait_Middle_Eastern_Generic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Middle_Eastern_Generic_2"
+		texturefile = "gfx/leaders/Middle_Eastern/Portrait_Middle_Eastern_Generic_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Middle_Eastern_Generic_3"
+		texturefile = "gfx/leaders/Middle_Eastern/Portrait_Middle_Eastern_Generic_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Middle_Eastern_Generic_4"
+		texturefile = "gfx/leaders/Middle_Eastern/Portrait_Middle_Eastern_Generic_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Middle_Eastern_Generic_5"
+		texturefile = "gfx/leaders/Middle_Eastern/Portrait_Middle_Eastern_Generic_5.dds"
+	}
+}

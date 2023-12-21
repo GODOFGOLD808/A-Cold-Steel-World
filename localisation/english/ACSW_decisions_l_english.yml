@@ -1,0 +1,41 @@
+﻿l_english:
+ ### New Decisions ###
+ 
+ # Debug Political Decisions
+ acsw_debug_change_to_anarchism:0 "Change to Anarchism"
+ acsw_debug_change_to_communism:0 "Change to Communism"
+ acsw_debug_change_to_syndicalism:0 "Change to Syndicalism"
+ acsw_debug_change_to_liberal:0 "Change to Liberalism"
+ acsw_debug_change_to_neutrality:0 "Change to Non-Aligned"
+ acsw_debug_change_to_conservative:0 "Change to Conservatism"
+ acsw_debug_change_to_monarchism:0 "Change to Monarchism"
+ acsw_debug_change_to_nationalism:0 "Change to Nationalism"
+ acsw_debug_change_to_fascism:0 "Change to Fascism"
+ 
+ # Debug Point Decisions
+ acsw_debug_add_100_pp:0 "+100 Political Power"
+ acsw_debug_add_500_pp:0 "+500 Political Power"
+ acsw_debug_add_10_stability:0 "+10 Stability"
+ acsw_debug_add_50_stability:0 "+50 Stability"
+ acsw_debug_add_10_war_support:0 "+10 War Support"
+ acsw_debug_add_50_war_support:0 "+50 War Support"
+ 
+ # Debug Idea/National Spirit Decisions
+ acsw_debug_remove_all_ideas:0 "Remove All Ideas"
+ 
+ # Generic Country Decisions
+ anarchism_on_the_rise:0 "Anarchism on the Rise"
+ communism_on_the_rise:0 "Communism on the Rise"
+ syndicalism_on_the_rise:0 "Syndicalism on the Rise"
+ liberal_on_the_rise:0 "Liberalism on the Rise"
+ neutrality_on_the_rise:0 "Centrism on the Rise"
+ conservative_on_the_rise:0 "Conservatism on the Rise"
+ monarchism_on_the_rise:0 "Monarchism on the Rise"
+ nationalism_on_the_rise:0 "Nationalism on the Rise"
+ fascism_on_the_rise:0 "Fascism on the Rise"
+ 
+ # Major Country Decisions
+ RUS_interference_on_ukraine:0 "Russian Interference in Ukraine"
+ 
+ 
+ 

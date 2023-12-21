@@ -1,0 +1,30 @@
+### Nationalist Russia Categories ###
+
+RUS_political_control_category = {
+
+	icon = generic_political_control
+
+	picture = GFX_decision_rus_political_control
+
+	allowed = {
+		# Must have this scripted trigger
+		has_government = has_rightist_government
+	}
+}
+
+RUS_tsarist_monarchists_category = {
+
+	icon = generic_tsarist_monarchists
+
+	picture = GFX_decision_rus_tsarist_monarchists
+
+	allowed = {
+		has_government = nationalism
+		AND = {
+			has_country_leader = {
+				name = "Lavr Kornilov"
+				ruling_only = yes
+			}
+		}
+	}
+}

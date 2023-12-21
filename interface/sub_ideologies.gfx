@@ -1,0 +1,44 @@
+spriteTypes = {
+	
+	# Sub-Ideologies
+	
+	spriteType = {
+		name = "GFX_ideology_social_democracy_subtype"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/social_democracy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_democratic_socialism"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/democratic_socialism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_socialism"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/socialism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_technocrat"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/technocracy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_anarchism"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/anarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_military_dictatorship"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/military_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_national_syndicalism"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/national_syndicalism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_third_position"
+		texturefile = "gfx/interface/ideologies/sub_ideologies/third_position.dds"
+	}
+}

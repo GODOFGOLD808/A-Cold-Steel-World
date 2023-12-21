@@ -1,0 +1,24 @@
+state={
+	id=954
+	name="STATE_954"
+	
+	history={
+		owner = ROM
+		victory_points = {
+			9716 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = ROM
+	}
+	
+	provinces={
+		744 3728 3741 6584 9716 11534 
+	}
+	manpower=271692
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=5.000
+}

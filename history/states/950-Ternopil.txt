@@ -1,0 +1,25 @@
+state={
+	id=950
+	name="STATE_950"
+	
+	history={
+		owner = POL
+		victory_points = {
+			11427 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = POL
+		add_core_of = UKR
+	}
+	
+	provinces={
+		438 3483 3562 11427 
+	}
+	manpower=225004
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=8.000
+}
